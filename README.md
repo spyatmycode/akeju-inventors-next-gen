@@ -41,7 +41,7 @@ Create a new task.
 
 Example `curl`
 ```bash
-curl -X POST http://localhost:3000/tasks \
+curl -X POST http://localhost:5555/tasks \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer faketoken" \
   -d '{"title": "Write documentation", "description": "For the new API"}'
@@ -63,7 +63,7 @@ Retrieve all tasks, paginated.
 
 Example `curl`
 ```bash
-curl -H "Authorization: Bearer faketoken" http://localhost:3000/tasks?page=1&limit=5
+curl -H "Authorization: Bearer faketoken" http://localhost:5555/tasks?page=1&limit=5
 ```
 
 Response
@@ -83,7 +83,7 @@ Retrieve a specific task by its ID.
 
 Example `curl`
 ```bash
-curl -H "Authorization: Bearer faketoken" http://localhost:3000/tasks/abc123-id
+curl -H "Authorization: Bearer faketoken" http://localhost:5555/tasks/abc123-id
 ```
 
 Response (if found)
@@ -126,14 +126,14 @@ If not found
 
 1. Clone & install
 ```bash
-git clone https://github.com/your-username/task-api.git
+git clone https://github.com/spyatmycode/akeju-inventors-next-gen.git
 cd task-api
 npm install
 ```
 
 2. Configure `.env`
 ```env
-PORT=3000
+PORT=5555
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
