@@ -156,13 +156,14 @@ npm run dev
 
 ```
 src/
+├── config/
 ├── controllers/
 ├── services/
+├── types/
 ├── routes/
 ├── middlewares/
-├── validators/
-├── entity/
-├── utils/
+├── entities/
+├── utilities/
 ├── data-source.ts
 └── index.ts
 ```
